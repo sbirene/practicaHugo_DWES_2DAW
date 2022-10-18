@@ -1,0 +1,35 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'Práctica Hugo'
+theme = 'book'
+
+# Multi-lingual mode config
+[languages]
+[languages.en]
+  languageName = 'English'
+  contentDir = 'content'
+  weight = 1
+
+[languages.es]
+  languageName = 'Español'
+  contentDir = 'content.es'
+  weight = 2
+
+[languages.fr]
+  languageName = 'Français'
+  contentDir = 'content.fr'
+  weight = 3
+
+
+# Menu de debajo
+[menu]
+# [[menu.before]]
+[[menu.after]]
+  name = "Github"
+  url = "https://github.com/alex-shpak/hugo-book"
+  weight = 10
+
+[[menu.after]]
+  name = "Hugo Themes"
+  url = "https://themes.gohugo.io/hugo-book/"
+  weight = 20
