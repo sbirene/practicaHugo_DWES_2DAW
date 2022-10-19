@@ -1,7 +1,7 @@
 ---
 weight: 2
 bookFlatSection: true
-title: "Sobre Hugo"
+title: "Sur Hugo"
 ---
 
 # Hugo
