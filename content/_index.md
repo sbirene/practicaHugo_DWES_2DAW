@@ -3,4 +3,22 @@ title: Home
 type: docs
 ---
 
-# Home in English
+# Hugo - Irene Sanz
+
+## About me
+My name is **Irene**, I'm 28, and I am currently studying a higher degree in **Web Application Development** in Zaragoza.
+
+{{< button relref="/content/docs/sobre_mi/_index.md" >}}Know more{{< /button >}}
+
+
+## Hugo
+The world’s fastest framework for building websites.
+
+{{< button relref="/content/docs/hugo/_index.md" >}}Know more{{< /button >}}
+
+
+
+## Client - Server
+Lorem markdownum insigne...
+
+{{< button relref="/content/docs/cliente_servidor/_index.md" >}}Know more{{< /button >}}
