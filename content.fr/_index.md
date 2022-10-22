@@ -20,6 +20,6 @@ Le framework le plus rapide au monde pour la création de sites Web.
 
 
 ## Client - Server
-Lorem markdownum insigne...
+Comment un client communique-t-il avec un serveur?
 
 {{< button relref="/content.fr/docs/cliente_servidor/_index.md" >}}Savoir plus{{< /button >}}

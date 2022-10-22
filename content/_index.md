@@ -19,6 +19,6 @@ The world’s fastest framework for building websites.
 
 
 ## Client - Server
-Lorem markdownum insigne...
+How does a client communicate with a server?
 
 {{< button relref="/content/docs/cliente_servidor/_index.md" >}}Know more{{< /button >}}

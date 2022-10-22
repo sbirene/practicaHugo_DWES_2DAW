@@ -55,4 +55,4 @@ Nos situamos en la carpeta en la que queramos guardar los directorios y archivos
 $ hugo new site <nombre_sitio>
 ```
 
-!Y así ya tenemos el sitioo creado con HUGO!
+!Y así ya tenemos el sitio creado con HUGO!
