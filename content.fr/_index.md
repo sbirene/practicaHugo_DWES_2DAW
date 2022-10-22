@@ -18,8 +18,13 @@ Le framework le plus rapide au monde pour la création de sites Web.
 {{< button relref="/content.fr/docs/hugo/_index.md" >}}Savoir plus{{< /button >}}
 
 
-
 ## Client - Server
 Comment un client communique-t-il avec un serveur?
 
 {{< button relref="/content.fr/docs/cliente_servidor/_index.md" >}}Savoir plus{{< /button >}}
+
+
+## Puzzle
+Serez-vous capable de résoudre le puzzle?
+
+{{< button relref="/content.fr/docs/puzzle/_index.md" >}}Savoir plus{{< /button >}}

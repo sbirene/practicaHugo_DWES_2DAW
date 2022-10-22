@@ -17,8 +17,13 @@ El framework más rápido del mundo para crear sitios web.
 {{< button relref="/content.es/docs/hugo/_index.md" >}}Saber más{{< /button >}}
 
 
-
 ## Cliente - Servidor
 ¿Cómo se comunica un cliente con un servidor?
 
 {{< button relref="/content.es/docs/cliente_servidor/_index.md" >}}Saber más{{< /button >}}
+
+
+## Puzzle
+¿Serás capaz de resolver el puzzle?
+
+{{< button relref="/content.es/docs/puzzle/_index.md" >}}Saber más{{< /button >}}
