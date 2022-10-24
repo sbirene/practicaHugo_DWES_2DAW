@@ -2,140 +2,140 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://example.org/docs/sobre_mi/</loc>
+    <loc>https://sbirene.github.io/practicaHugo_DWES_2DAW/docs/sobre_mi/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://example.org/es/docs/sobre_mi/"
+                href="https://sbirene.github.io/practicaHugo_DWES_2DAW/es/docs/sobre_mi/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://example.org/fr/docs/sobre_mi/"
+                href="https://sbirene.github.io/practicaHugo_DWES_2DAW/fr/docs/sobre_mi/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://example.org/docs/sobre_mi/"
+                href="https://sbirene.github.io/practicaHugo_DWES_2DAW/docs/sobre_mi/"
                 />
   </url><url>
-    <loc>http://example.org/docs/hugo/</loc>
+    <loc>https://sbirene.github.io/practicaHugo_DWES_2DAW/docs/hugo/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://example.org/es/docs/hugo/"
+                href="https://sbirene.github.io/practicaHugo_DWES_2DAW/es/docs/hugo/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://example.org/fr/docs/hugo/"
+                href="https://sbirene.github.io/practicaHugo_DWES_2DAW/fr/docs/hugo/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://example.org/docs/hugo/"
+                href="https://sbirene.github.io/practicaHugo_DWES_2DAW/docs/hugo/"
                 />
   </url><url>
-    <loc>http://example.org/docs/cliente_servidor/</loc>
+    <loc>https://sbirene.github.io/practicaHugo_DWES_2DAW/docs/cliente_servidor/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://example.org/es/docs/cliente_servidor/"
+                href="https://sbirene.github.io/practicaHugo_DWES_2DAW/es/docs/cliente_servidor/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://example.org/fr/docs/cliente_servidor/"
+                href="https://sbirene.github.io/practicaHugo_DWES_2DAW/fr/docs/cliente_servidor/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://example.org/docs/cliente_servidor/"
+                href="https://sbirene.github.io/practicaHugo_DWES_2DAW/docs/cliente_servidor/"
                 />
   </url><url>
-    <loc>http://example.org/docs/puzzle/</loc>
+    <loc>https://sbirene.github.io/practicaHugo_DWES_2DAW/docs/puzzle/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://example.org/es/docs/puzzle/"
+                href="https://sbirene.github.io/practicaHugo_DWES_2DAW/es/docs/puzzle/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://example.org/fr/docs/puzzle/"
+                href="https://sbirene.github.io/practicaHugo_DWES_2DAW/fr/docs/puzzle/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://example.org/docs/puzzle/"
+                href="https://sbirene.github.io/practicaHugo_DWES_2DAW/docs/puzzle/"
                 />
   </url><url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://sbirene.github.io/practicaHugo_DWES_2DAW/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://example.org/es/categories/"
+                href="https://sbirene.github.io/practicaHugo_DWES_2DAW/es/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://example.org/fr/categories/"
+                href="https://sbirene.github.io/practicaHugo_DWES_2DAW/fr/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://example.org/categories/"
+                href="https://sbirene.github.io/practicaHugo_DWES_2DAW/categories/"
                 />
   </url><url>
-    <loc>http://example.org/docs/</loc>
+    <loc>https://sbirene.github.io/practicaHugo_DWES_2DAW/docs/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://example.org/es/docs/"
+                href="https://sbirene.github.io/practicaHugo_DWES_2DAW/es/docs/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://example.org/fr/docs/"
+                href="https://sbirene.github.io/practicaHugo_DWES_2DAW/fr/docs/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://example.org/docs/"
+                href="https://sbirene.github.io/practicaHugo_DWES_2DAW/docs/"
                 />
   </url><url>
-    <loc>http://example.org/</loc>
+    <loc>https://sbirene.github.io/practicaHugo_DWES_2DAW/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://example.org/es/"
+                href="https://sbirene.github.io/practicaHugo_DWES_2DAW/es/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://example.org/fr/"
+                href="https://sbirene.github.io/practicaHugo_DWES_2DAW/fr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://example.org/"
+                href="https://sbirene.github.io/practicaHugo_DWES_2DAW/"
                 />
   </url><url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://sbirene.github.io/practicaHugo_DWES_2DAW/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://example.org/es/tags/"
+                href="https://sbirene.github.io/practicaHugo_DWES_2DAW/es/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://example.org/fr/tags/"
+                href="https://sbirene.github.io/practicaHugo_DWES_2DAW/fr/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://example.org/tags/"
+                href="https://sbirene.github.io/practicaHugo_DWES_2DAW/tags/"
                 />
   </url>
 </urlset>
