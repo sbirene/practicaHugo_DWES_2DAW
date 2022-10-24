@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://sbirene.github.io/practicaHugo_DWES_2DAW/'
 languageCode = 'en-us'
 title = 'Práctica Hugo - Irene Sanz'
 theme = 'book'
