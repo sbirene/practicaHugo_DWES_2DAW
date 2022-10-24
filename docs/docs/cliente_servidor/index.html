@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Communication of a client with a server # On this page we will try to explain the process by which a client communicates with a server.
+The client-server architecture or client-server model is a communication protocol through a network (such as the Internet) in which the tasks are distributed among the providers of resources or services, called servers, and the plaintiffs, called clients.
+A client makes requests to another program, the server, which responds.">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Client --&gt; Server" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://example.org/docs/cliente_servidor/" />
+
+<title>Client --&gt; Server | Práctica Hugo - Irene Sanz</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+  <link rel="alternate" hreflang="en-us" href="http://example.org/es/docs/cliente_servidor/" title="Cliente --&gt; Servidor">
+  <link rel="alternate" hreflang="en-us" href="http://example.org/fr/docs/cliente_servidor/" title="Client--&gt; Serveur">
+<link rel="stylesheet" href="/book.min.63e4f2e608bc97f71c7bbf73f7f643e6f3cf63f4782b271f0345db361f49c111.css" integrity="sha256-Y&#43;Ty5gi8l/cce79z9/ZD5vPPY/R4KycfA0XbNh9JwRE=" crossorigin="anonymous"><link rel="alternate" type="application/rss+xml" href="http://example.org/docs/cliente_servidor/index.xml" title="Práctica Hugo - Irene Sanz" />
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><img src="/004-lapiz.png" alt="Logo" /><span>Práctica Hugo - Irene Sanz</span>
+  </a>
+</h2>
+
+
+
+
+  
+
+
+
+  
+    
+  
+    
+  
+
+
+  
+
+  
+
+
+<ul class="book-languages">
+  <li>
+    <input type="checkbox" id="languages" class="toggle" />
+    <label for="languages" class="flex justify-between">
+      <a role="button" class="flex align-center">
+        <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
+        English
+      </a>
+    </label>
+
+    <ul>
+      
+      <li>
+        <a href="http://example.org/es/docs/cliente_servidor/">
+          Español
+        </a>
+      </li>
+      
+      <li>
+        <a href="http://example.org/fr/docs/cliente_servidor/">
+          Français
+        </a>
+      </li>
+      
+    </ul>
+  </li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="/docs/sobre_mi/" class="">About me</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="/docs/hugo/" class="">About Hugo</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="/docs/cliente_servidor/" class="active">Client --&gt; Server</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="/docs/puzzle/" class="">Solve the puzzle</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/sbirene" target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://themes.gohugo.io/hugo-book/" target="_blank" rel="noopener">
+        Hugo Themes
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Client --&gt; Server</strong>
+
+  <label for="toc-control">
+    
+  </label>
+</div>
+
+
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="communication-of-a-client-with-a-server">
+  Communication of a client with a server
+  <a class="anchor" href="#communication-of-a-client-with-a-server">#</a>
+</h1>
+<p>On this page we will try to explain the process by which a client communicates with a server.</p>
+<p>The <em>client-server architecture</em> or <em>client-server model</em> is a communication protocol through a network (such as the Internet) in which the tasks are distributed among the providers of resources or services, called <strong>servers</strong>, and the plaintiffs, called <strong>clients</strong>.</p>
+<p>A client makes requests to another program, the server, which responds.</p>
+<p>In this case, to explain how communication is carried out, we are going to focus on the process of loading a web page.</p>
+<p>It is important to mention that a large part of Internet services obey the <em>client-server architecture</em>. The web server makes the websites available to the client, which are accessed through the browser. It is the server that hosts the data that the client (browser) requests.</p>
+<h3 id="important-concepts">
+  Important concepts:
+  <a class="anchor" href="#important-concepts">#</a>
+</h3>
+<blockquote>
+<blockquote>
+<p><strong>Client</strong>: device connected to the Internet (for example, a computer connected to the Wi-Fi network or a phone connected to the mobile phone network) and the software that is available and allows access to the Internet (usually, a web browser).</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p><strong>Server</strong>: computer that stores web pages, sites or applications.</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p><strong>TCP/IP: Transmission Control Protocol and Internet Protocol</strong>, communication protocols that define how data should travel through the web.</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p><strong>DNS</strong>: servers of the <strong>Domain Name System</strong>, we could define them as a website address book. When you type a web address into your browser, usually a domain (such as <em><a href="https://www.google.es">www.google.es</a></em>), DNS translates that domain name to its IP address to find out which server the website lives on so it can send HTTP messages to correct place.</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p><strong>HTTP</strong>: Hypertext Transfer Protocol, is an application protocol that defines how clients and servers communicate.</p>
+</blockquote>
+</blockquote>
+<h2 id="what-happens-then">
+  What happens then?
+  <a class="anchor" href="#what-happens-then">#</a>
+</h2>
+<p>When you type a web address (or domain) in the browser:</p>
+<ol>
+<li>The browser goes to the DNS server and finds the real address of the server where the website is hosted.</li>
+<li>The browser sends an HTTP request message to the server, asking it to send a copy of the web page to the client. This message, and all data sent between the client and the server, is sent over the Internet connection using TCP/IP.</li>
+<li>Whenever the server approves the client&rsquo;s request, the server will start sending the web page files to the browser as a series of small chunks called data packets.</li>
+<li>The browser puts the little pieces together, forms a complete website and shows it to you.</li>
+</ol>
+<h2 id="graphic-example">
+  Graphic example
+  <a class="anchor" href="#graphic-example">#</a>
+</h2>
+
+
+<script src="/mermaid.min.js"></script>
+
+  <script>mermaid.initialize({
+  "flowchart": {
+    "useMaxWidth":true
+  },
+  "theme": "default"
+}
+)</script>
+
+
+
+
+<p class="mermaid">
+flowchart LR
+    id1(Client - Browser)-->id2(DNS)
+    id2-- IP adress -->id1
+    id1-->id3{{Internet}}-->id4[(Server)]
+</p>
+
+<p>Once the request is approved:
+
+
+<p class="mermaid">
+flowchart LR
+    id4[(Server)]-->id3{{Internet}}-->id1(Client - Browser)
+</p>
+</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

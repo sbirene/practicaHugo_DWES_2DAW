@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Comunicación de un cliente con un servidor # En esta página vamos a intentar explicar el proceso por el cual se comunica un cliente con un servidor.
+La arquitectura cliente-servidor o modelo cliente-servidor es un protocolo de comunicación a través de una red (como puede ser Internet) en el que las tareas se reparten entre los proveedores de recursos o servicios, llamados servidores, y los demandantes, llamados clientes.
+Un cliente realiza peticiones a otro programa, el servidor, quien le da respuesta.">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Cliente --&gt; Servidor" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://example.org/es/docs/cliente_servidor/" />
+
+<title>Cliente --&gt; Servidor | Práctica Hugo - Irene Sanz</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+  <link rel="alternate" hreflang="en-us" href="http://example.org/docs/cliente_servidor/" title="Client --&gt; Server">
+  <link rel="alternate" hreflang="en-us" href="http://example.org/fr/docs/cliente_servidor/" title="Client--&gt; Serveur">
+<link rel="stylesheet" href="/book.min.63e4f2e608bc97f71c7bbf73f7f643e6f3cf63f4782b271f0345db361f49c111.css" integrity="sha256-Y&#43;Ty5gi8l/cce79z9/ZD5vPPY/R4KycfA0XbNh9JwRE=" crossorigin="anonymous"><link rel="alternate" type="application/rss+xml" href="http://example.org/es/docs/cliente_servidor/index.xml" title="Práctica Hugo - Irene Sanz" />
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/es/"><img src="/004-lapiz.png" alt="Logo" /><span>Práctica Hugo - Irene Sanz</span>
+  </a>
+</h2>
+
+
+
+
+  
+
+
+
+  
+    
+  
+    
+  
+
+
+  
+
+  
+
+
+<ul class="book-languages">
+  <li>
+    <input type="checkbox" id="languages" class="toggle" />
+    <label for="languages" class="flex justify-between">
+      <a role="button" class="flex align-center">
+        <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
+        Español
+      </a>
+    </label>
+
+    <ul>
+      
+      <li>
+        <a href="http://example.org/docs/cliente_servidor/">
+          English
+        </a>
+      </li>
+      
+      <li>
+        <a href="http://example.org/fr/docs/cliente_servidor/">
+          Français
+        </a>
+      </li>
+      
+    </ul>
+  </li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="/es/docs/sobre_mi/" class="">Sobre mí</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="/es/docs/hugo/" class="">Sobre Hugo</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="/es/docs/cliente_servidor/" class="active">Cliente --&gt; Servidor</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="/es/docs/puzzle/" class="">Resuelve el puzzle</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/sbirene" target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://themes.gohugo.io/hugo-book/" target="_blank" rel="noopener">
+        Hugo Themes
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Cliente --&gt; Servidor</strong>
+
+  <label for="toc-control">
+    
+  </label>
+</div>
+
+
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="comunicación-de-un-cliente-con-un-servidor">
+  Comunicación de un cliente con un servidor
+  <a class="anchor" href="#comunicaci%c3%b3n-de-un-cliente-con-un-servidor">#</a>
+</h1>
+<p>En esta página vamos a intentar explicar el proceso por el cual se comunica un cliente con un servidor.</p>
+<p>La <em>arquitectura cliente-servidor</em> o <em>modelo cliente-servidor</em> es un protocolo de comunicación a través de una red (como puede ser Internet) en el que las tareas se reparten entre los proveedores de recursos o servicios, llamados <strong>servidores</strong>, y los demandantes, llamados <strong>clientes</strong>.</p>
+<p>Un cliente realiza peticiones a otro programa, el servidor, quien le da respuesta.</p>
+<p>En este caso, para explicar cómo se realiza la comunicación, vamos a centrarnos en el proceso de carga de una página web.</p>
+<p>Es importante mencionar que gran parte de los servicios de Internet obedecen a la <em>arquitectura cliente-servidor</em>. El servidor web pone a disposición del cliente los sitios web, a los cuales se accede a través del navegador. Es el servidor el que aloja los datos que el cliente (navegador) solicita.</p>
+<h3 id="conceptos-importantes">
+  Conceptos importantes:
+  <a class="anchor" href="#conceptos-importantes">#</a>
+</h3>
+<blockquote>
+<blockquote>
+<p><strong>Cliente</strong>: dispositivo conectado a Internet (por ejemplo, un ordenador conectado a la red Wi-Fi o un teléfono conectado a la red de telefonía móvil) y el software que se encuentra disponible y permite acceder a Internet (normalmente, un navegador web).</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p><strong>Servidor</strong>: computador que almacena páginas web, sitios o aplicaciones.</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p><strong>TCP/IP: Protocolo de Control de Transmisión y Protocolo de Internet</strong>, protocolos de comunicación que definen cómo deben viajar los datos a través de la web.</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p><strong>DNS</strong>: servidores del <strong>Sistema de Nombres de Dominio</strong>, podríamos definirlos como una libreta de direcciones de sitios web. Cuando escribes una dirección web en el navegador, normalmente un dominio (como <em><a href="https://www.google.es">www.google.es</a></em>), el DNS traduce ese nombre de dominio a su dirección IP para averiguar en qué servidor vive el sitio web y así enviar los mensajes HTTP al lugar correcto.</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p><strong>HTTP</strong>: Protocolo de Transferencia de Hipertexto, es un protocolo de aplicación que define cómo se comunican clientes y servidores.</p>
+</blockquote>
+</blockquote>
+<h2 id="qué-ocurre-entonces">
+  ¿Qué ocurre, entonces?
+  <a class="anchor" href="#qu%c3%a9-ocurre-entonces">#</a>
+</h2>
+<p>Cuando escribes una dirección web (o dominio) en el navegador:</p>
+<ol>
+<li>El navegador va al servidor DNS y encuentra la dirección real del servidor donde está alojado el sitio web.</li>
+<li>El navegador envía un mensaje de petición HTTP al servidor, pidiéndole que envíe una copia de la página web para el cliente. Este mensaje y todos los datos enviados entre el cliente y el servidor, se envían a través de la conexión a Internet usando TCP/IP.</li>
+<li>Siempre que el servidor apruebe la solicitud del cliente, el servidor comenzará a enviar los archivos de la página web al navegador como una serie de pequeños trozos llamados paquetes de datos.</li>
+<li>El navegador reúne los pequeños trozos, forma un sitio web completo y te lo muestra.</li>
+</ol>
+<h2 id="ejemplo-gráfico">
+  Ejemplo gráfico
+  <a class="anchor" href="#ejemplo-gr%c3%a1fico">#</a>
+</h2>
+
+
+<script src="/mermaid.min.js"></script>
+
+  <script>mermaid.initialize({
+  "flowchart": {
+    "useMaxWidth":true
+  },
+  "theme": "default"
+}
+)</script>
+
+
+
+
+<p class="mermaid">
+flowchart LR
+    id1(Cliente - Navegador)-->id2(DNS)
+    id2-- dirección IP -->id1
+    id1-->id3{{Internet}}-->id4[(Servidor)]
+</p>
+
+<p>Una vez aprobada la solicitud:
+
+
+<p class="mermaid">
+flowchart LR
+    id4[(Servidor)]-->id3{{Internet}}-->id1(Cliente - Navegador)
+</p>
+</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
