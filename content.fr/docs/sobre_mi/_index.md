@@ -21,4 +21,4 @@ Avant cela, j'ai étudié le marketing et les études de marché à l'Universit�
 
 Mais ce que j'aime le plus, c'est la programmation et la conception de pages Web et j'aimerais pouvoir travailler et gagner ma vie en faisant cela.
 
-![Emoji](/images/emoji.png)
+![Emoji](https://github.com/sbirene/practicaHugo_DWES_2DAW/blob/main/static/images/emoji.png?raw=true)
