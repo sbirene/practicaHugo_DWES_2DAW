@@ -33,6 +33,10 @@ Vuespress
 |                           |                        | JSP               |                              |             |
 
 
+{{< hint info >}}
+**He añadido Java y HTML**
+{{< /hint >}}
+
 
 {{< expand "Lenguajes de programación" "+" >}}
 **[PHP](http://www.php.net)**: 

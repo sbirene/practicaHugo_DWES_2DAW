@@ -32,7 +32,9 @@ Vuespress
 |                           |                      | Heroku            |                             |               |
 |                           |                      | JSP               |                             |               |
 
-
+{{< hint info >}}
+**J'ai ajouté Java et HTML**
+{{< /hint >}}
 
 {{< expand "Langages de programmation" "+" >}}
 **[PHP](http://www.php.net)**: 
