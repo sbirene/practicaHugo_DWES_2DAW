@@ -21,4 +21,4 @@ Before that, I studied Marketing and Market Research at the University of Zarago
 
 But what I like the most is programming and web page design and I would love to be able to work and make a living doing it.
 
-![Emoji](https://github.com/sbirene/practicaHugo_DWES_2DAW/blob/main/static/images/emoji.png?raw=true)
+![Emoji](https://raw.githubusercontent.com/sbirene/practicaHugo_DWES_2DAW/main/static/images/emoji.png)

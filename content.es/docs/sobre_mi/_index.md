@@ -21,4 +21,4 @@ Antes de eso, estudié Marketing e Investigación de Mercados en la Universidad 
 
 Pero lo que más me gusta es la programación y el diseño de páginas web y me encantaría poder trabajar y ganarme la vida con ello.
 
-![Emoji](https://github.com/sbirene/practicaHugo_DWES_2DAW/blob/main/static/images/emoji.png?raw=true)
+![Emoji](https://raw.githubusercontent.com/sbirene/practicaHugo_DWES_2DAW/main/static/images/emoji.png)
