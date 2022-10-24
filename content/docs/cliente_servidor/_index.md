@@ -17,7 +17,7 @@ In this case, to explain how communication is carried out, we are going to focus
 It is important to mention that a large part of Internet services obey the *client-server architecture*. The web server makes the websites available to the client, which are accessed through the browser. It is the server that hosts the data that the client (browser) requests.
 
 ### Important concepts:
->> **Client**: device connected to the Internet (for example, a computer connected to the Wi-Fi network or a phone connected to the mobile phone network) and the software that is available and allows access to the Internet (usually , a web browser).
+>> **Client**: device connected to the Internet (for example, a computer connected to the Wi-Fi network or a phone connected to the mobile phone network) and the software that is available and allows access to the Internet (usually, a web browser).
 
 >> **Server**: computer that stores web pages, sites or applications.
 

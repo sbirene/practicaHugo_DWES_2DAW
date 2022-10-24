@@ -1,0 +1,36 @@
+/* You can add custom styles here. */
+
+/* separar un poco el menú lateral del contenido */
+aside.book-menu {
+    margin-right: 5%;
+}
+
+/* separar el logo del menú de idiomas */
+h2.book-brand {
+    margin-bottom: 15%;
+}
+
+/* separar menú idiomas del menú del contenido */
+ul.book-languages {
+    margin-bottom: 15%;
+}
+
+/* color del link del menu activo */
+.book-menu a.active {
+    color: #f9c54b;
+  }
+
+/* estilo de los botones */
+a.book-btn:hover {
+    color: white;
+    background-color: var(--color-link);
+}
+
+/* estilo de las citas */
+/*.markdown blockquote {
+    border-inline-start: 0.25rem solid #f9c54b;
+}
+
+blockquote strong {
+    color: #f9c54b;
+}*/
